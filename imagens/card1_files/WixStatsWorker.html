@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0995)https://app.ardalio.com/WixStatsWorker?lang=pt&dateNumberFormat=pt-br&isPrimaryLanguage=true&pageId=masterPage&compId=tpaWorker_75&viewerCompId=tpaWorker_75&siteRevision=2281&viewMode=site&deviceType=desktop&locale=pt&tz=America%2FFortaleza&regionalLanguage=pt&endpointType=worker&instance=kX5BE-EOhVTV28LDq57DRSBEkr95TzwFY1izqjEA4K8.eyJpbnN0YW5jZUlkIjoiNjMzZjJkOTUtMzg3OC00Yjk1LWEzNWEtYjkyYTk5NTQ1N2M2IiwiYXBwRGVmSWQiOiIxMmNhMmZkNi1hNGM5LWI5MWYtYWU2Yy05NDg2OGIyYThmMWMiLCJzaWduRGF0ZSI6IjIwMjQtMDctMTBUMTM6MzI6MzcuNzg3WiIsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiYTFjNDZjY2YtMWIzMS00MGZiLTk0ZjItZjdmOWZjMDUwMDMxIiwic2l0ZU93bmVySWQiOiI4ZjFlNWE4Zi1lNGQwLTRmNzgtOTZhYy05ZThlOWFmMzNkNzcifQ&currency=BRL&currentCurrency=BRL&commonConfig=%7B%22brand%22%3A%22wix%22%2C%22host%22%3A%22VIEWER%22%2C%22bsi%22%3A%22e7181943-7e71-42cc-bce7-6764788e58e4%7C1%22%2C%22siteRevision%22%3A%222281%22%2C%22BSI%22%3A%22e7181943-7e71-42cc-bce7-6764788e58e4%7C1%22%7D&currentRoute=.%2F&vsi=f52c936a-08e7-411b-9f73-93af9a1004ac -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="referrer" content="no-referrer">
+<title></title>
+
+<script type="text/javascript" src="./wix.min.js.baixados"></script>
+<script>
+var wts7 = {};
+var WORKER_DATA = {};
+var alias = "2182664";
+var db = "16";
+var status = "0";
+var test_mode = "no";
+var uses_embedded_script = "yes";
+var app_url = "app.ardalio.com";
+
+if (document.readyState === "loading") {
+   document.addEventListener("DOMContentLoaded", function() {
+      initializeWorker(); 
+   });
+} 
+else {
+   initializeWorker(); 
+}
+
+//////////////////////////////////////////
+function initializeWorker(){
+
+   if (Wix.Worker.Utils.getViewMode() != "site"){
+      return;
+   }
+
+   if (status > 0 || test_mode == "yes"){
+      Wix.Worker.addEventListener(Wix.Events.PAGE_NAVIGATION, function() {
+         window.location.reload();
+      });
+   }
+   if (status > 1){
+      Wix.Worker.addEventListener(Wix.Events. MEMBER_DETAILS_UPDATED, function(event) {
+         var data = new URLSearchParams();
+         data.append("action", "member_edit");
+         data.append("alias", alias);
+         data.append("db", db);
+         data.append("data", JSON.stringify(event));
+         navigator.sendBeacon("https://"+app_url+"/wixStatsAjax.pl", data);
+      });
+   }
+
+   Wix.Worker.getSiteInfo( function(siteInfo) {
+      wts7 = {};
+      wts7.url = siteInfo.url || "";
+//      wts7.title = siteInfo.pageTitleOnly || "";
+      wts7.title = siteInfo.pageTitle || "";
+      wts7.page_name = wts7.title;  
+//console.log("worker says page name 1: "+wts7.page_name);
+      wts7.referer = siteInfo.referer || siteInfo.referrer || "";
+      wts7.uses_embedded_script = uses_embedded_script;
+      Wix.Worker.currentMember( function(member) {
+         if (member && member.id){
+            wts7.user_id = member.id;
+         }
+         WORKER_DATA = {
+               type: "workerData",
+               value: wts7
+         };
+//console.log("WORKER SEND DATA 1");
+//console.log(WORKER_DATA);
+         window.parent.postMessage(WORKER_DATA, "*");  // will update the visit with url, page_name, title, referrer and user_id
+
+         if (uses_embedded_script != "yes"){
+            printWorker();
+         }
+
+      });
+   }); 
+
+}
+
+////////////////////////////////////
+function printWorker(){
+
+   wts7.origin = "WixStatsWorker";
+   wts7.user_status = "regular";
+   wts7.params = "wix";
+   wts7.invisible = "yes";
+
+   var wts=document.createElement("script");
+   wts.async=true;
+   wts.src="https://"+app_url+"/log7.js";
+   document.head.appendChild(wts);
+   wts.onload = function(){ wtslog7(alias,db,"","","","","WixStatsWorker"); };
+
+}
+
+</script>
+<style wix-style="">.Title{ font:normal normal normal 22px/1.4em brandon-grot-w01-light,brandon-grot-w05-light,sans-serif; } .Menu{ font:normal normal normal 14px/1.79em avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif; } .Page-title{ font:normal normal normal 28px/1.375em brandon-grot-w01-light,brandon-grot-w05-light,sans-serif; } .Heading-XL{ font:normal normal normal 88px/1.2em brandon-grot-w01-light,brandon-grot-w05-light,sans-serif; } .Heading-L{ font:normal normal normal 72px/1.25em brandon-grot-w01-light,brandon-grot-w05-light,sans-serif; } .Heading-M{ font:normal normal normal 50px/1.34em brandon-grot-w01-light,brandon-grot-w05-light,sans-serif; } .Heading-S{ font:normal normal normal 40px/1.35em brandon-grot-w01-light,brandon-grot-w05-light,sans-serif; } .Body-L{ font:normal normal normal 20px/1.67em brandon-grot-w01-light,brandon-grot-w05-light,sans-serif; } .Body-M{ font:normal normal normal 18px/1.75em brandon-grot-w01-light,brandon-grot-w05-light,sans-serif; } .Body-S{ font:normal normal normal 15px/1.875em avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif; } .Body-XS{ font:normal normal normal 14px/1.79em avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif; } }</style><link type="text/css" rel="stylesheet" href="./languages-woff2.css"><link type="text/css" rel="stylesheet" href="./wixMadefor.css"><style>:focus {
+    outline: none;
+}
+
+.js-focus-visible .focus-visible:focus,
+.js-focus-visible .focus-visible:focus ~ .wixSdkShowFocusOnSibling
+{
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 1px 2px #3899EC;
+}
+</style><script src="./focus-visible.min.js.baixados" id="dynamic_script_FOCUS_VISIBLE"></script></head>
+<body class="js-focus-visible">
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8a10ebcb2d8327f5',t:'MTcyMDYxODM2MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource.html"></iframe>
+</body></html>
