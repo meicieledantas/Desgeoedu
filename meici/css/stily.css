@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+ }
+
+ #inicio {
+    z-index: 1;
+    background: url("../imagens/geoparque-serido.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* height: 110vh; */
+    height: 80vh;
+}
+
+.cabecalho_celular{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-centro {
+    display: none;
+    justify-content: center;
+    margin-top: -1vh;
+    margin-left: 40%;
+}
+
+.logo img{
+    width: 15vh;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.texto-celular {
+    display: inline;
+    font-size: 2vh;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3em;
+    padding-right: 15px;
+}
+
+.para_tablet_pc nav {
+    display: none;
+}
+
+nav ul {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 3vh;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    z-index: 4 ;
+    position: fixed;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    position: fixed;
+    right: -100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+
+nav ul button {
+    display: none;
+    
+}
+
+.botao-entrar{
+    display: none;
+}
+
+
+/* modifica uma propriedade, nesse caso o right, quando acionado */
+#check:checked ~ ul {
+    right: -25%;
+
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #0a0a0a
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+    width: 52%;
+    height:  100%;
+    padding-right: 5vh;
+    border-radius: 2vh;
+    border: none;
+    background-color: #E1481E;
+    padding: 1vh;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    margin-right: 4vh;
+}
+
+
+nav ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+
+.botao-en {
+    display: none;
+} 
+
+
+.botao-entrar-portrait{
+    display: flex;
+    width: 12vh;
+    height: 8vh ;
+    padding-right: 5vh;
+    border-radius: 2vh;
+    border: none;
+    background-color: #E1481E;
+    padding: 1vh;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    margin-right: 4vh;
+    margin-bottom: 2vh;
+}
+
+.botao-entrar-portrait a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+}
+
+.nome-logo h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50vh;
+    font-family: "Noticia Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+#pagina-2 {
+    z-index: 1;
+    background: url("../imagens/pedra.jpg") ;
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 130vh;
+}
+
+
+#conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+.conteudo-2 {
+    display: flex;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 5%;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 100vh;
+    height: 70vh;
+    padding: 2vh; 
+}
+
+.texto-2 {
+    font-size: 1rem;
+    color: black;
+    border-radius: 20px;
+    background-color: #F3EFEE;
+    padding: 1rem;
+}
+
+h5 {
+    margin-top: 5rem;
+    font-size: .8rem;
+}
+
+.conteudo-lateral img {
+    display: none;
+}
+#conteudo-baixo {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+    padding-top: 0.25vh;    
+}
+
+#conteudo-baixo > div {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    margin: 0 .20rem;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+.fundo-branco {
+    z-index: 1;
+    border-radius: 20px;
+    background: #F3EFEE;
+    padding: 1vh;
+    height: 25vh;
+    width: 15vh;
+   box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+   margin-top: 0.5vh;
+}
+
+.lateral {
+    z-index: 2;
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+
+}
+
+.livro, .caderno, .chat {
+    z-index: 3;
+    padding-top: 5%;
+    margin: auto;
+    width: 8vh;
+    display: flex;
+    justify-content: center;
+}
+
+.livro-texto, .caderno-texto, .chat-texto {
+    display: flex;
+    font-size: 2vh;
+    justify-content: center;
+    text-align: center;
+}
+
+#pagina-3 {
+    display: flex;
+    flex-direction: column;
+    background: url("../imagens/acari.jpg");
+    z-index: 1;
+    height: 220vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.conheca {
+    margin: auto;
+    color: black;
+    padding-top: 5vh;
+}
+
+.escolas {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+
+}
+
+.escola{
+    display: inline-block;
+    width: 40vh;
+    height: 60vh;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin: 1vh;
+    margin-top: 10%;
+    justify-content: center;
+
+
+}
+
+.escola p {
+    margin-bottom: 1.6rem;
+}
+
+.escolas img {
+    border-radius: 20px;
+    padding: 1vh;
+    width: 40vh;
+}
+  
+.botao3 {
+    margin: auto;
+    display: block;
+    width: 12vh;
+    height: 8vh ;
+    border-radius: 20px;
+    border: none;
+    background-color: #F3EFEE;
+    padding: 1vh;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+}
+
+.escolas p {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1vh;
+}
+
+
+#pagina-4 {
+    background: url('../imagens/rochas-serido.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 96vh; /* ISSO AQUI QUE MUDA O TAMANHO DO RODAPÉ*/
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#video {
+    width: 88vw;
+    height: 40vh;;
+    padding: 1rem 0;
+    margin: auto;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* RODAPÉ */
+
+#rodape {
+    display: flex;
+    height: 60%;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+}
+
+.titulo-apoio {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.icones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagens-apoio {
+    display: flex;
+    justify-content: center;
+}
+
+.apoio {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 1vh 1vh 1vh;
+    margin: auto;
+}
+
+.imagens-apoio img {
+    width: 10vh;
+}
+
+.texto-apoio {
+    text-align: left;
+    font-size: 2vh; /*tamanho do texto do rodapé*/
+    font-weight: bold;
+}
+
+.texto-rodape3  {
+    padding-top: 1vh;
+}
+
+#parceria {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#parceria p {
+    color: black;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+#parceria img {
+    width: 15vh;
+}
+
+#redes-sociais-id{
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+   justify-content: space-around;
+   text-align: center;
+}
+
+#redes-sociais-id a p {
+    display: flex;
+    color: #fbf9f9;
+    font-size: 2vh;
+}
+#redes-sociais-id a {
+    text-decoration: none;
+}
+#parceria_e_rede-social {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#termos {
+    display: flex;
+    justify-content: center;
+}
+
+#termos a {
+    text-decoration: none;
+    color: #0a0a0a;
+}
+
+#termos a:hover {
+    color: white;
+}

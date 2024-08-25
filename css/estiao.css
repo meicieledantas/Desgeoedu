@@ -100,104 +100,11 @@ nav ul li a {
     color: #0a0a0a
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: #ffffff;
-    transform: scale(1.2);       
-    
-}
-nav ul li .insta:hover {
-    width: 15vh;
-    height: 5vh ;
-    padding-right: 5vh;
-    border-radius: 2vh;
-    border: none;
-    background-color: #E1481E;
-    padding: 1vh;
-    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-    margin-right: 4vh;
-}
-
-nav ul li .desgeo:hover {
-    width: 30vh;
-    height: 5vh ;
-    padding-right: 5vh;
-    border-radius: 2vh;
-    border: none;
-    background-color: #E1481E;
-    padding: 1vh;
-    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-    margin-right: 4vh;
-}
-
-
-nav ul li .plataforma:hover {
-    width: 60vh;
-    height: 5vh ;
-    padding-right: 5vh;
-    border-radius: 2vh;
-    border: none;
-    background-color: #E1481E;
-    padding: 1vh;
-    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-    margin-right: 4vh;
-}
-
-
-nav ul li .kids:hover {
-    width: 15vh;
-    height: 5vh ;
-    padding-right: 5vh;
-    border-radius: 2vh;
-    border: none;
-    background-color: #E1481E;
-    padding: 1vh;
-    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-    margin-right: 4vh;
-}
-
-
-nav ul li .video:hover {
-    width: 30vh;
-    height: 5vh ;
-    padding-right: 5vh;
-    border-radius: 2vh;
-    border: none;
-    background-color: #E1481E;
-    padding: 1vh;
-    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-    margin-right: 4vh;
-}
-
-
-nav ul li .blog:hover {
-    width: 30vh;
-    height: 5vh ;
-    padding-right: 5vh;
-    border-radius: 2vh;
-    border: none;
-    background-color: #E1481E;
-    padding: 1vh;
-    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-    margin-right: 4vh;
-}
-
-
-nav ul li .galeria:hover {
-    width: 40vh;
-    height: 5vh ;
-    padding-right: 5vh;
-    border-radius: 2vh;
-    border: none;
-    background-color: #E1481E;
-    padding: 1vh;
-    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-    margin-right: 4vh;
-}
-
-
-nav ul li .central:hover {
-    width: 60vh;
-    height: 5vh ;
+    transform: scale(1.2);
+    width: 52%;
+    height:  100%;
     padding-right: 5vh;
     border-radius: 2vh;
     border: none;
@@ -239,8 +146,6 @@ nav ul li:hover::after{
     display: flex;
     justify-content: center;
 }
-
-
 
 .nome-logo h1 {
     display: flex;
@@ -468,6 +373,7 @@ h5 {
     display: flex;
     justify-items: center;
     width: 30vh;
+    height: 50%;
     padding-left: 10%;
     padding-top: 10%;
 }
@@ -590,6 +496,9 @@ h5 {
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){
+    .nome-logo{
+        padding-top: -15vh;
+    }
     #check {
         display: none;
     }
@@ -617,19 +526,10 @@ h5 {
     nav ul li {
         padding-bottom: 1vh;
     }
-  
-    
     
     /* modifica uma propriedade, nesse caso o right, quando acionado */
     #check:checked ~ ul {
         right: -75%;
-    }
-    
-    
-    nav ul li a {
-        text-decoration: none;
-        color: #0a0a0a;
-        font-size: 4vh;
     }
     
     nav ul li a:hover{
@@ -638,106 +538,19 @@ h5 {
         
     }
 
-    nav ul li a {
+    nav ul li a{
         text-decoration: none;
-        color: #0a0a0a
-    }
-    
-    nav ul li a:hover{
-        color: #ffffff;
-        transform: scale(1.2);       
-        
-    }
-    nav ul li .insta{
-        width: 15vh;
+        color: #0a0a0a;
+        font-size: 4vh;
+        width: 100%;
         height: 5vh ;
         border-radius: 2vh;
         border: none;
-        background-color: #E1481E;
+        background-color: transparent;
         padding: 1vh;
         box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
     }
-    
-    nav ul li .desgeo{
-        width: 30vh;
-        height: 5vh ;
-        border-radius: 2vh;
-        border: none;
-        background-color: #E1481E;
-        padding: 1vh;
-        box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-    }
-    
-    
-    nav ul li .plataforma {
-        text-align: center;
-        width: 60vh;
-        height: 5vh ;
-        padding-right: 5vh;
-        border-radius: 2vh;
-        border: none;
-        background-color: #E1481E;
-        padding: 1vh;
-        box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-    }
-    
-    
-    nav ul li .kids{
-        width: 15vh;
-        height: 5vh ;
-        border-radius: 2vh;
-        border: none;
-        background-color: #E1481E;
-        padding: 1vh;
-        box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-    }
-    
-    
-    nav ul li .video {
-        width: 30vh;
-        height: 5vh ;
-        border-radius: 2vh;
-        border: none;
-        background-color: #E1481E;
-        padding: 1vh;
-        box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-    }
-    
-    
-    nav ul li .blog {
-        width: 30vh;
-        height: 5vh ;
-        border-radius: 2vh;
-        border: none;
-        background-color: #E1481E;
-        padding: 1vh;
-        box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-    }
-    
-    
-    nav ul li .galeria {
-        width: 40vh;
-        height: 5vh ;
-        border-radius: 2vh;
-        border: none;
-        background-color: #E1481E;
-        padding: 1vh;
-        box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-    }
-    
-    
-    nav ul li .central {
-        width: 60vh;
-        height: 5vh ;
-        border-radius: 2vh;
-        border: none;
-        background-color: #E1481E;
-        padding: 1vh;
-        box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-        margin-right: 4vh;
-    }
-    
-    
+     
     nav ul li:hover::after{
         top: 50%;
         opacity: 1;
@@ -1065,7 +878,7 @@ h5 {
     }
     #redes-sociais-id{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
     }
 
@@ -1113,11 +926,21 @@ h5 {
 }
 
 @media (min-width: 768px) {
+    #inicioo {
+        height: 120%;
+    }
+    .logo p{
+        font-size:4vh;
+    }
+
+    .nome-logo h1{
+        font-size: 5vh;
+    }
     #check {
         display: none;
     }
     label {
-        font-size: 3em;
+        font-size: 5em;
         padding-right: 15px;
     }
     .para_tablet_pc nav {
@@ -1179,10 +1002,288 @@ h5 {
         transform: scale(1.2);       
         
     }
-    
-    
-}
+    .conteudo-2{
+        width: 100%;
+       
+    }
 
+    #conteudo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .texto-2 p  {
+        font-size: 3.25vh;
+    }
+    .texto-2  h2 {
+        font-size: 5vh;
+    }
+
+    .texto-2 h5 {
+        font-size: 2.5vh;
+    }
+
+    .conteudo-lateral img{
+        display: none;
+    }
+
+    #conteudo-baixo {
+        display: flex;
+    }
+
+    #pagina-3{
+        height: 80vh;;
+    }
+
+
+    .escolas {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+    
+    }
+    .escolas {
+        display: flex;
+        flex-direction: row;
+    }
+    .escola1, .escola2, .escola3 {
+        display: inline-block;
+        width: 30%;
+        height: 45vh;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        margin: 1vh;
+        margin-top: 10%;
+        justify-content: center;
+    
+    
+    }
+    
+    #pagina-3 h1{
+        font-size: 5vh;
+    }
+    .escolas img {
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+        padding: 1vh;
+        width: 101%;
+    }
+    
+    .botao3 {
+        display: none;
+        justify-content: center;
+        width: 6vh;
+        height: 3vh ;
+        border-radius: 20px;
+        border: none;
+        background-color: #F3EFEE;
+        padding: 1vh;
+        box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+        margin-right: 4vh;
+    }
+    
+    .escolas p {
+        font-size: 2.5vh;
+        font-weight: bold;
+        text-align: center;
+        padding: 1vh;
+    }
+
+    #rodape {
+        display: flex;
+        height: 50%;
+        width: 100%;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+    }
+
+    #icones {
+        display: flex;
+        justify-content: space-around;    
+    }
+
+    .titulo-apoio {
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        font-size: 4vh;
+
+    }
+
+
+    .icones {
+        display: flex;
+        justify-content: flex-start;
+        justify-content: space-around;
+    }
+    .imagens-apoio {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .apoio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .imagens-apoio img {
+        width: 10vh;
+    }
+
+    .texto-apoio, .texto-apoio2, .texto-apoio3 {
+        display: flex;
+        text-align: left;
+        font-size: 2vh;
+        font-weight: bold;
+    }
+
+    #texto-apoio-id {
+        width: 60%;
+    }
+
+   
+    #parceria {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    #parceria p {
+        color: black;
+        font-weight: bold;
+        font-size: 2.5vh;
+    }
+
+    #parceria img {
+        display: flex;
+        width: 25vh;
+    }
+    #redes-sociais-id{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #redes-sociais-id a p {
+        display: flex;
+        text-align: center;
+        color: #060606;
+        font-size: 4vh;
+    }
+    #redes-sociais-id a {
+        text-decoration: none;
+    }
+
+    #rede-social-id img {
+        width: 20vh;
+    }
+    #parceria_e_rede-social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #texto_parceria_rede_social{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #termos {
+        display: flex;
+        justify-content: center;
+    }
+
+    #termos a {
+        text-decoration: none;
+        color: #0a0a0a;
+    }
+
+    #termos a:hover {
+        color: white;
+
+    }
+}
+    
+
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */ 
+@media (min-width: 992px){
+    .conteudo-2{
+        width: 50%;
+       
+    }
+
+    .texto-2 p{
+        font-size: 2vh;
+    }
+
+    .conteudo-lateral img{
+        display: flex;
+    }
+
+    #conteudo-baixo {
+        display: none;
+
+    }
+
+    #pagina-3 {
+        height: 130vh;
+    }
+
+    .escola1, .escola2, .escola3{
+        height: 80vh;
+    }
+    .escolas img {
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+        padding: 1vh;
+        width: 101%;
+    }
+    
+    .botao3 {
+        display: none;
+        justify-content: center;
+        width: 6vh;
+        height: 3vh ;
+        border-radius: 20px;
+        border: none;
+        background-color: #F3EFEE;
+        padding: 1vh;
+        box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+        margin-right: 4vh;
+    }
+    
+    .escolas p {
+        font-size: 4vh;
+        font-weight: bold;
+        text-align: center;
+        padding: 1vh;
+    }
+
+    #redes-sociais-id{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+
+
+}
 @media (min-width: 1200px) {
     .checkbox_botao {
         display: none;
@@ -1196,27 +1297,33 @@ h5 {
         display: none;
     }
 
-    .para_tablet_pc nav {
-            margin-top: 0px;
-            margin-left: 28vh;
-            background-color: #fff;
-            border-radius: 20px;
-            padding: 1vh;
-            box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-            z-index: 4 ;
-            position: fixed;
-    }
-    .para_tablet_pc a {
+    #para_tablet_pc nav{
+        display: flex;
+        margin-left: 16%;
+        margin-top: -5%;
+        background-color: #fff;
+        border-radius: 20px;
+        width: 80%;
+        height: 10vh;
+        padding: 1vh;
+        box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    } 
+
+
+    a{
         text-decoration: none;
         color: black;
 
     }
+    .abecalho_celular{
+        display: none;
+    }
 
-    .para_tablet_pc nav ul li {
+    #para_tablet_pc nav ul li {
         list-style: none;
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
         padding: 0.15vh 0.15vh ;
-        margin: 1.5vh;
         font-size: 16px;
         font-weight: 500;
         color: black;
@@ -1224,4 +1331,157 @@ h5 {
         position: relative;
     }
 
+    #para_tablet_pc nav ul li::after{
+        content: '';
+        background-color: #E1481E;
+        flex-direction: row;
+        width:130%;
+        height: 175%;
+        border-radius: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        z-index: -1;   
+        opacity: 0;   
+    }
+
+    #para_tablet_pc nav ul li a:hover{
+        color: white;
+    }
+    
+
+    #para_tablet_pc nav ul li:hover::after{
+        top: 50%;
+        opacity: 1;
+    }
+
+    .botao-entrar {
+        width: 12vh;
+        height: 8vh ;
+        padding-right: 5vh;
+        border-radius: 2vh;
+        border: none;
+        background-color: #E1481E;
+        padding: 1vh;
+        box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+        margin-right: 4vh;
+    }
+
+
+    .entre {
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+
+    }
+
+    button:hover{
+        transition: 0.3;
+        transform: scale(1.2);
+}
+
+
+    #pagina-2{
+        height: 110%;
+    }
+
+    .texto-2 p{
+        font-size: 3.5vh;
+    }
+    #conteudo-baixo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .fundo-branco, .fundo-branco2, .fundo-branco3 {
+        display: flex;
+        padding-top: -5vh;
+        z-index: 1;
+        border-radius: 20px;
+        background: #F3EFEE;
+        height: 35vh;
+        width: 20vh;
+        box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    }
+
+    .livro, .caderno, .chat {
+        z-index: 3;
+        padding-top: 5%;
+        margin-left: 25%;
+        width: 12vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .livro-texto, .caderno-texto, .chat-texto {
+        display: flex;
+        font-size: 3vh;
+        justify-content: center;
+        text-align: center;
+    }
+    #video {
+        height: 65%;
+    }
+    #rodape {
+        display: flex;
+        height: 35%;
+
+    }
+
+    #parceria p {
+        color: black;
+        font-weight: bold;
+        font-size: 2.5vh;
+    }
+
+    #parceria img {
+        display: flex;
+        width: 25vh;
+    }
+    #redes-sociais-id{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #redes-sociais-id a p {
+        display: flex;
+        text-align: center;
+        color: #060606;
+        font-size: 4vh;
+    }
+    #redes-sociais-id a {
+        text-decoration: none;
+    }
+
+    #rede-social-id img {
+        width: 120%;
+    }
+    #parceria_e_rede-social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #texto_parceria_rede_social{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #termos {
+        display: flex;
+        justify-content: center;
+    }
+
+    #termos a {
+        text-decoration: none;
+        color: #0a0a0a;
+    }
+
+    #termos a:hover {
+        color: white;
+
+    }
 }

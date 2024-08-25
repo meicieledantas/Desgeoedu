@@ -1,0 +1,138 @@
+@media (min-width: 720px) {
+    .botao-en {
+        display: none;
+    } 
+
+    .titulo-1{
+        font-size: 3rem;
+    }
+
+    .texto-2{
+        font-size: 1.6rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+        margin-top: 4rem;
+    }
+
+    #conteudo-baixo{
+        margin: 0 4rem;
+    }
+
+    #pagina-4{
+        height: 88vh;
+    }
+}
+
+@media (min-width: 1000px) {
+    .texto-2{
+        font-size: 1.8rem;
+    }
+
+    .botao-en {
+        display: none;
+    } 
+
+    #conteudo-baixo{
+        margin: 0 20rem;
+    }
+
+    .fundo-branco {
+        height: 30vh;
+        width: 15vw;
+        font-size: 1.6rem;
+    }
+
+    .lateral {
+        height: 80%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    #pagina-4{
+        display: flex;
+        text-align: center;
+    }
+
+    iframe{
+        width: 50%;
+    }
+
+    .titulo-apoio {
+        font-size: 3rem;
+    }
+
+    #icones{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagens-apoio img {
+        width: 20vh;
+    }
+
+    .texto-apoio{
+        font-size: 2rem;
+    }
+
+    #parceria>p {
+        font-size: 2rem;
+    }
+
+    #rede-sociais p {
+        font-size: 2rem;
+    }
+
+    #termos a {
+        font-size: 2rem;
+    }
+
+    #pagina-4{
+        height: 108vh;
+    }
+
+    .cabecalho_celular {
+        display: none;
+    }
+
+    .para_tablet_pc nav {
+        display: flex;
+    }
+
+    nav ul {
+        position: static; 
+        flex-direction: row; 
+        justify-content: flex-end; 
+        background-color: transparent; 
+        box-shadow: none; 
+        padding: 0;
+    }
+    nav ul li {
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    nav ul li a {
+        color: #0a0a0a;
+        font-size: 1rem; 
+        text-decoration: none;
+    }
+
+    .botao-entrar {
+        display: none;
+    }
+
+    nav ul li a:hover {
+        color: black;
+        height:  100%;
+        padding-right: 0;
+        border-radius: 2vh;
+        border: none;
+        background-color: transparent;
+        margin-right: 0;
+    }
+    
+}
