@@ -929,6 +929,8 @@ h5 {
 
 }
 
+
+
 /* TABLET PORTRAIT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
     #inicio {
@@ -1038,7 +1040,7 @@ h5 {
     }
 
     .texto-2 p  {
-        font-size: 3vh;
+        font-size: 2.75vh;
     }
     .texto-2  h2 {
         font-size: 5vh;
@@ -1200,7 +1202,7 @@ h5 {
 
     #parceria img {
         display: flex;
-        width: 25vh;
+        width: 15vh;
     }
     #redes-sociais-id{
         display: flex;
@@ -1219,11 +1221,11 @@ h5 {
     }
 
     .insta img {
-        width: 8vh;
+        width: 5vh;
     }
 
     .youtube img {
-        width: 8vh;
+        width: 5vh;
     }
     #parceria_e_rede-social {
         display: flex;
@@ -1367,7 +1369,7 @@ h5 {
     }
 
     .texto-2 p{
-        font-size: 1.vh;
+        font-size: 1vh;
     }
 
     .conteudo-lateral img{
@@ -1413,28 +1415,39 @@ h5 {
         text-align: center;
         padding: 1vh;
     }
-    
+    #rodape{
+        height: 50%;
+    }
+
+
+    #parceria img {
+        display: flex;
+        width: 8vh;
+    }
+    #texto_parceria_rede_social p{
+        font-size: 3vh;
+    }
     #redes-sociais-id{
         display: flex;
         flex-direction: column;
     }
 
-    #redes-sociais-id a p {
-        font-size: 1vh;
+    #redes-sociais-id  p {
+        font-size: 10px;
     }
     #redes-sociais-id a {
         text-decoration: none;
     }
 
     .insta img {
-        width: 5vh;
+        width: 3vh;
     }
 
     .insta p {
         font-size: 1vh;
     }
     .youtube img {
-        width: 5vh;
+        width: 3vh;
     }
   
 
