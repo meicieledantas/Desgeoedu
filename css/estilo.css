@@ -499,7 +499,6 @@ h5 {
 
 }
 
-
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px){
     .nome-logo{
@@ -1259,249 +1258,7 @@ h5 {
     
 
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */ 
-@media (min-width: 992px){
 
-    .logo img{
-        display: flex;
-        width: 25vh;
-        padding-left: 5%;
-    }
-
-    .container {
-        top: 0;
-        border-radius: 10px;
-       background-color: #F3EFEE;
-       width: 90%;
-       height: 20vh;
-       display: flex;
-       align-items: center;
-       justify-content: space-around;
-       margin-left: 5%;
-       z-index: 3;
-       position: absolute;
-
-    }
-
-
-    .logo {
-        flex-direction: column;
-    }
-    .logo h1{
-        display: flex;
-        font-size: 4vh;
-        font-family: "Noticia Text", serif;
-        font-weight: 400;
-        font-style: normal;
-        justify-content: center;
-
-    }
-
-   #nav_tablet_pc{
-        display: flex;
-    }
-    #para_tablet_pc nav ul li{
-        position: static; 
-        flex-direction: row; 
-        box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-        padding: 0;
-    }
-
-    #para_tablet_pc nav ul {
-        position: static; 
-        flex-direction: row; 
-        justify-content: space-around; 
-        box-shadow: none; 
-        padding: 0;
-    }
-    #para_tablet_pc nav ul li {
-        margin-bottom: 1rem;
-    }
-
-    #para_tablet_pc nav ul li a {
-        color: #0a0a0a;
-        font-size: 1.5vh; 
-        text-decoration: none;
-    }
-   
-    #para_tablet_pc nav ul li a:hover {
-        color: black;
-        height:  100%;
-        width: 100%;
-        border-radius: 2vh;
-        border: none;
-        background-color: #E1481E;
-    }
-    .botao-entrar{
-        display: flex;
-        width: 10vh;
-        height: 8vh ;
-        border-radius: 2vh;
-        border: none;
-        background-color: #E1481E;
-        padding: 1vh;
-        box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-    }
-    
-    .botao-entrar a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 150%;
-    }
-    
-
-    .logo-centro{
-        display: flex;
-        flex-direction: column;
-        padding-top: 25vh;
-        justify-content: center;
-    }
-
-    .logo-centro p {
-        font-size: 5vh;
-        font-family: "Noticia Text", serif;
-        font-weight: 400;
-        font-style: normal;
-        justify-content: center;
-
-        
-    }
-    .conteudo-2{
-        width: 50%;
-       
-    }
-
-    .texto-2 p{
-        font-size: 1vh;
-    }
-
-    .conteudo-lateral img{
-        display: flex;
-    }
-
-    #conteudo-baixo {
-        display: none;
-
-    }
-
-    #pagina-3 {
-        height: 130vh;
-    }
-
-    .escola1, .escola2, .escola3{
-        height: 80vh;
-    }
-    .escolas img {
-        display: flex;
-        justify-content: center;
-        border-radius: 20px;
-        padding: 1vh;
-        width: 101%;
-    }
-    
-    .botao3 {
-        display: none;
-        justify-content: center;
-        width: 6vh;
-        height: 3vh ;
-        border-radius: 20px;
-        border: none;
-        background-color: #F3EFEE;
-        padding: 1vh;
-        box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
-        margin-right: 4vh;
-    }
-    
-    .escolas p {
-        font-size: 4vh;
-        font-weight: bold;
-        text-align: center;
-        padding: 1vh;
-    }
-    #video {
-        height: 65%;
-    }
-
-
-
-    #pagina-4{
-        height: 180vh;
-    }
-
-
-
-    .apoio{
-        width: 95vw;
-    }
-
-
-
-
-
-
-
-    #rodape {
-        display: flex;
-        height: 35%;
-
-    }
-
-    #parceria p {
-        color: black;
-        font-weight: bold;
-        font-size: 2.5vh;
-    }
-
-    #parceria img {
-        display: flex;
-        width: 25vh;
-    }
-    #redes-sociais-id{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    #redes-sociais-id a p {
-        display: flex;
-        text-align: center;
-        color: #060606;
-        font-size: 4vh;
-    }
-    #redes-sociais-id a {
-        text-decoration: none;
-    }
-
-    #rede-social-id img {
-        width: 120%;
-    }
-    #parceria_e_rede-social {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 40%;
-    }
-
-    #texto_parceria_rede_social{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    #termos {
-        display: flex;
-        justify-content: center;
-    }
-
-    #termos a {
-        text-decoration: none;
-        color: #0a0a0a;
-    }
-
-    #termos a:hover {
-        color: white;
-
-    }
-
-}
 @media (min-width: 1200px) {
     .checkbox_botao {
         display: none;
@@ -1517,11 +1274,10 @@ h5 {
 
     #para_tablet_pc nav{
         display: flex;
-        margin-left: -10vh;
         margin-top: -5%;
         background-color: #fff;
         border-radius: 20px;
-        width: 125%;
+        width: 100%;
         height: 10vh;
         padding: 1vh;
         box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
@@ -1619,5 +1375,87 @@ h5 {
         justify-content: center;
         text-align: center;
     }
-  
+    #video {
+        height: 65%;
+    }
+
+
+
+    #pagina-4{
+        height: 180vh;
+    }
+
+
+
+    .apoio{
+        width: 95vw;
+    }
+
+
+
+
+
+
+
+    #rodape {
+        display: flex;
+        height: 35%;
+
+    }
+
+    #parceria p {
+        color: black;
+        font-weight: bold;
+        font-size: 2.5vh;
+    }
+
+    #parceria img {
+        display: flex;
+        width: 25vh;
+    }
+    #redes-sociais-id{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #redes-sociais-id a p {
+        display: flex;
+        text-align: center;
+        color: #060606;
+        font-size: 4vh;
+    }
+    #redes-sociais-id a {
+        text-decoration: none;
+    }
+
+    #rede-social-id img {
+        width: 120%;
+    }
+    #parceria_e_rede-social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 40%;
+    }
+
+    #texto_parceria_rede_social{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #termos {
+        display: flex;
+        justify-content: center;
+    }
+
+    #termos a {
+        text-decoration: none;
+        color: #0a0a0a;
+    }
+
+    #termos a:hover {
+        color: white;
+
+    }
 }
